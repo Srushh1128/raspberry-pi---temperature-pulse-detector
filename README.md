@@ -1,30 +1,65 @@
-# raspberry-pi---temperature-pulse-detector
-Temperature and Pulse Rate Detector using Raspberry Pi is a health monitoring system that measures real-time body temperature and pulse rate using digital sensors connected to a Raspberry Pi. This project is designed to demonstrate how embedded systems and IoT can be used in basic healthcare monitoring applications. 
-
 # Temperature and Pulse Rate Detector using Raspberry Pi
 
-This project uses a Raspberry Pi to detect and display human body temperature and pulse rate using connected sensors.
+## Overview
+This project is an IoT-based health monitoring system that measures human body temperature and pulse rate using sensors connected to a Raspberry Pi 4. The sensor readings are processed using Python and displayed in real time.
+
+
+<img width="500" height="500" alt="WhatsApp Image 2026-07-02 at 18 19 54" src="https://github.com/user-attachments/assets/9803d563-d7eb-4f71-8228-ef85dabdc537" />
+
+---
 
 ## Features
-- Reads temperature using a DHT11 or LM35 sensor.
-- Reads pulse rate using a Pulse Sensor.
-- Displays real-time readings via terminal or GUI (Tkinter optional).
-- Easy to set up and run on Raspberry Pi.
+- Measures body temperature using DHT11/LM35 sensor.
+- Detects pulse rate using a Pulse Sensor.
+- Displays real-time sensor readings.
+- Python-based implementation on Raspberry Pi 4.
+
+---
 
 ## Hardware Used
-- Raspberry Pi 3/4
-- DHT11/LM35 Temperature Sensor
-- Pulse Sensor (KY-039 / other)
-- Jumper Wires
+- Raspberry Pi 4
+- MicroSD Card (with Raspberry Pi OS installed)
+- DHT11 / LM35 Temperature Sensor
+- Pulse Sensor
 - Breadboard
+- Jumper Wires
+- Power Supply
 
-## Software Requirements
+---
+
+## Software Used
+- Raspberry Pi OS
 - Python 3
-- GPIO Library (RPi.GPIO)
-- Adafruit_DHT (if using DHT11)
-- Matplotlib (optional for graph)
+- GPIO Library
+- Thonny Python IDE (or Terminal)
 
-## Setup
-```bash
-pip install -r requirements.txt
-python3 main.py
+---
+
+## Working
+1. Raspberry Pi OS is installed on the microSD card.
+2. Python scripts run on the Raspberry Pi.
+3. The temperature and pulse sensors send data through GPIO pins.
+4. The Python program reads and processes the sensor values.
+5. The readings are displayed in real time.
+
+---
+
+## Technologies
+- Raspberry Pi 4
+- Python
+- Embedded Systems
+- IoT
+- GPIO Programming
+
+---
+
+## Future Improvements
+- Upload sensor data to the cloud.
+- Add a web dashboard for remote monitoring.
+- Send alerts when readings exceed normal limits.
+
+---
+
+## Author
+
+**Srushti Patil**
